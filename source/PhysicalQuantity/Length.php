@@ -75,5 +75,9 @@ class Length extends AbstractPhysicalQuantity
         $newUnit->addAlias('astronomical unit');
         $newUnit->addAlias('astronomical units');
         static::addUnit($newUnit);
+
+        $newUnit = UnitOfMeasure::linearUnitFactory('test', 10);
+        $newUnit->addAlias('tst');
+        static::addUnit($newUnit);
     }
 }
